@@ -17,9 +17,15 @@ public class AddingMachine {
         // TODO (OPTIONAL): Add code anywhere below to complete AddingMachine
 		while (true) {
 			input = scanner.nextInt();
+			arrayOfInputs[index] = input;
 			if (input == 0) {
 				if (isPreviousZero) {
 					System.out.println("total " + total);
+					for(int i = 0; i < arrayOfInputs.length; i++) {
+						if(arrayOfInputs[i] != 0) {
+							System.out.println(arrayOfInputs[i]);
+						}
+					}
 					return;
 				} else {
 					System.out.println("subtotal " + subtotal);
@@ -32,7 +38,7 @@ public class AddingMachine {
 			if (input != 0) {
 				isPreviousZero = false;
 			}
-
+			index += 1;
 		}
 	}
 

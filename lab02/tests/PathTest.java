@@ -7,13 +7,12 @@
 
 // Uncomment this file when you start Path
 
-/*
 public class PathTest {
 
     public static void testIterate() {
         Path path = new Path(0, 0);
         path.iterate(1, 1);
-        System.out.println(Math.abs(path.getCurrX()) < .001);
+         System.out.println(Math.abs(path.getCurrX()) < .001);
         System.out.println(Math.abs(path.getCurrY()) < .001);
         System.out.println(Math.abs(1 - path.getNextX()) < .001);
         System.out.println(Math.abs(1 - path.getNextY()) < .001);
@@ -33,4 +32,3 @@ public class PathTest {
 
 }
 
- */
